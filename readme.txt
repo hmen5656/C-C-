@@ -22,3 +22,24 @@ basics_of_malloc.cpp
 class_unary_operator.cpp & class_binary_operator.cpp
   - after passing basics of classes on cPP i tried to use binary and unary operator in cpp with different ways and i learnt what is happening and what it is returnin when we use them with pointer or as references . with this features we can deal ( opertors such as + , = , - , << ) with classes like integers and character arrays.
   
+draw_rectangular.cpp  
+  - draws a rectangular shapes with leghts are given 2 numbers  and its drawing rectangular with border and inside is empty
+                         *****
+                         *   *   with parameter 5 and 4 you will get an rectangular like this
+                         *   *
+                         *****
+  
+draw_triangle.cpp
+  - it prints an triangle  with given input number and this input number is specift triangle's height 
+  
+     1
+    1 2
+   1 2 3     output is look like this fopr given input 4
+  1 2 3 4
+  
+
+
+
+
+
+
