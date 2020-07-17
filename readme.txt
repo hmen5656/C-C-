@@ -14,4 +14,7 @@ keylogger.cpp
   - in keylogger project i'm getting all keys inputs from keyboard and saving them to the .txt file . its sensetive with caps_lock , space , enter i.e . Also it's running on background.
   
 basics_DS.cpp
-  -after learning about basics of data structures i tried to ceate my linked list whith adding datas end of list or front of list with specific functions . with this project i improve my theoretical knowledge on datastructure with this project.
+  -after learning about basics of data structures i tried to ceate my linked list whith adding datas end of list or front of list with specific functions . with this project i improve my theoretical knowledge on datastructure with this project. Also ı have gained lots of about dynamic memory allocation and handlig with memory allocation.
+  
+ basics_of_malloc.cpp
+  - 
