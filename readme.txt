@@ -16,5 +16,9 @@ keylogger.cpp
 basics_DS.cpp
   -after learning about basics of data structures i tried to ceate my linked list whith adding datas end of list or front of list with specific functions . with this project i improve my theoretical knowledge on datastructure with this project. Also ı have gained lots of about dynamic memory allocation and handlig with memory allocation.
   
- basics_of_malloc.cpp
+basics_of_malloc.cpp
   - i have tried to handle with memory allocation with c language , there is difference on dynamic memory allocation in c and cPp languages . we are using malloc to allocate some space on memory  , and we are using free() function to free up allocated space.
+  
+class_unary_operator.cpp & class_binary_operator.cpp
+  - after passing basics of classes on cPP i tried to use binary and unary operator in cpp with different ways and i learnt what is happening and what it is returnin when we use them with pointer or as references . with this features we can deal ( opertors such as + , = , - , << ) with classes like integers and character arrays.
+  
