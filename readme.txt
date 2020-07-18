@@ -60,7 +60,12 @@ passout_gambling_card.cpp
  
  ====================================================================================================================
  
- 
+ prime_number.cpp
+   - this project find biggest prime number smaller than given input. for exampla if given numver given as 18 then result is 17. for input 28 result is 23
+   
+  
+ ====================================================================================================================
+
 
 
 
