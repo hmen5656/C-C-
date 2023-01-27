@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\template-service.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\template-service.dir/objects.a @CMakeFiles\template-service.dir\objects1
+C:\MinGW\bin\c++.exe -Wl,--whole-archive CMakeFiles\template-service.dir/objects.a -Wl,--no-whole-archive -o template-service.exe -Wl,--out-implib,libtemplate-service.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\template-service.dir\linkLibs.rsp

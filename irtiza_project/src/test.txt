@@ -1,0 +1,17 @@
+We have been given two batteries and one testing device. It's known that the batteries explode in certain current level, but we need to verify and figure out the maximum safe current before the battery explodes. 
+Inputs is the current level where battery is known to explode. We can test the same battery until it explodes, and we need to figure out the maximum safe current level before exploding given two batteries.
+In this question it is asked to find out minumum number of tests to be performed to figure out the maximum safe current before the battery explodes.
+
+
+
+Solution:
+
+In a non-optimal solution we can start testing the batteries from smalles possible value which is 1mA and incrase the testing current by one until we reach the given current level where the battery is known to explode.
+For example if we're given with input 20, we will need maximum 19 steps to figure out the safest current level, or it will take 1 step in case the current level where the battery explodes is 1mA. We know that this method will find 
+the solution but it is not ideal and it has O(n) time complexity.
+
+We need to find initial testing current value X. And if it explodes in that current level, we can start from 1mA to the X mA by increasing test current one by one. And if doesn't explode we can increase the test current by (X-1)mA , so the next current level we should try is  n + (n-1) mA. Similarly, if after this test if it does not explode, we next need to jump up to test current levle n + (n-1) + (n-2), then test current level n + (n-1) + (n-2) + (n-3).
+We keep decrease the current level by one each time we increse the test current level, until that given current level where battery is known to explode is just one mA away, and get the following equation for a given current level:
+n + (n-1) + (n-2) + (n-3) + (n-4) + … + 1  >=  given_current_level
+Simplifes to: n (n+1) / 2  >=  given_current_level
+The optimum number of tests to be performed will be positive root of this equation and if it is a floating point number it needs to be ceiled.
