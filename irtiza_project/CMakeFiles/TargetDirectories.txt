@@ -1,5 +1,0 @@
-C:/Users/HuseyinMen/Desktop/C-Cpp/irtiza_project/CMakeFiles/edit_cache.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/irtiza_project/CMakeFiles/rebuild_cache.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/irtiza_project/src/CMakeFiles/template-service.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/irtiza_project/src/CMakeFiles/edit_cache.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/irtiza_project/src/CMakeFiles/rebuild_cache.dir

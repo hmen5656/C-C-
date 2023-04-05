@@ -1,5 +1,0 @@
-C:/Users/HuseyinMen/Desktop/C-Cpp/operators_project_cpp/CMakeFiles/edit_cache.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/operators_project_cpp/CMakeFiles/rebuild_cache.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/operators_project_cpp/src/CMakeFiles/template-service.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/operators_project_cpp/src/CMakeFiles/edit_cache.dir
-C:/Users/HuseyinMen/Desktop/C-Cpp/operators_project_cpp/src/CMakeFiles/rebuild_cache.dir
