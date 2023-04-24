@@ -1,4 +1,5 @@
 #include "screen.hpp"
+#include <string.h>
 
 namespace PFA {
 
