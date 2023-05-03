@@ -48,27 +48,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.26.0/bin/cmake
+CMAKE_COMMAND = C:/mingw64/bin/cmake.exe
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.26.0/bin/cmake -E rm -f
+RM = C:/mingw64/bin/cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp
+CMAKE_SOURCE_DIR = D:/C_CPP/C-Cpp/Particle_scattering_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp
+CMAKE_BINARY_DIR = D:/C_CPP/C-Cpp/Particle_scattering_cpp
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.26.0/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	C:/mingw64/bin/cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.26.0/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:/mingw64/bin/cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(CMAKE_COMMAND) -E cmake_progress_start /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp/CMakeFiles /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp/src//CMakeFiles/progress.marks
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp/CMakeFiles 0
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(CMAKE_COMMAND) -E cmake_progress_start D:/C_CPP/C-Cpp/Particle_scattering_cpp/CMakeFiles D:/C_CPP/C-Cpp/Particle_scattering_cpp/src//CMakeFiles/progress.marks
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/C_CPP/C-Cpp/Particle_scattering_cpp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/template-service.dir/rule:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/template-service.dir/rule
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/template-service.dir/rule
 .PHONY : src/CMakeFiles/template-service.dir/rule
 
 # Convenience name for target.
@@ -127,23 +127,23 @@ template-service: src/CMakeFiles/template-service.dir/rule
 
 # fast build rule for target.
 template-service/fast:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/build
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/build
 .PHONY : template-service/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+main.obj: main.cpp.obj
+.PHONY : main.obj
 
 # target to build an object file
-main.cpp.o:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.cpp.obj:
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
 main.i: main.cpp.i
 .PHONY : main.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/main.cpp.i
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -151,23 +151,23 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/main.cpp.s
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-particle.o: particle.cpp.o
-.PHONY : particle.o
+particle.obj: particle.cpp.obj
+.PHONY : particle.obj
 
 # target to build an object file
-particle.cpp.o:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/particle.cpp.o
-.PHONY : particle.cpp.o
+particle.cpp.obj:
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/particle.cpp.obj
+.PHONY : particle.cpp.obj
 
 particle.i: particle.cpp.i
 .PHONY : particle.i
 
 # target to preprocess a source file
 particle.cpp.i:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/particle.cpp.i
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/particle.cpp.i
 .PHONY : particle.cpp.i
 
 particle.s: particle.cpp.s
@@ -175,23 +175,23 @@ particle.s: particle.cpp.s
 
 # target to generate assembly for a file
 particle.cpp.s:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/particle.cpp.s
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/particle.cpp.s
 .PHONY : particle.cpp.s
 
-renderer.o: renderer.cpp.o
-.PHONY : renderer.o
+renderer.obj: renderer.cpp.obj
+.PHONY : renderer.obj
 
 # target to build an object file
-renderer.cpp.o:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/renderer.cpp.o
-.PHONY : renderer.cpp.o
+renderer.cpp.obj:
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/renderer.cpp.obj
+.PHONY : renderer.cpp.obj
 
 renderer.i: renderer.cpp.i
 .PHONY : renderer.i
 
 # target to preprocess a source file
 renderer.cpp.i:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/renderer.cpp.i
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/renderer.cpp.i
 .PHONY : renderer.cpp.i
 
 renderer.s: renderer.cpp.s
@@ -199,23 +199,23 @@ renderer.s: renderer.cpp.s
 
 # target to generate assembly for a file
 renderer.cpp.s:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/renderer.cpp.s
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/renderer.cpp.s
 .PHONY : renderer.cpp.s
 
-screen.o: screen.cpp.o
-.PHONY : screen.o
+screen.obj: screen.cpp.obj
+.PHONY : screen.obj
 
 # target to build an object file
-screen.cpp.o:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/screen.cpp.o
-.PHONY : screen.cpp.o
+screen.cpp.obj:
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/screen.cpp.obj
+.PHONY : screen.cpp.obj
 
 screen.i: screen.cpp.i
 .PHONY : screen.i
 
 # target to preprocess a source file
 screen.cpp.i:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/screen.cpp.i
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/screen.cpp.i
 .PHONY : screen.cpp.i
 
 screen.s: screen.cpp.s
@@ -223,23 +223,23 @@ screen.s: screen.cpp.s
 
 # target to generate assembly for a file
 screen.cpp.s:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/screen.cpp.s
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/screen.cpp.s
 .PHONY : screen.cpp.s
 
-swarm.o: swarm.cpp.o
-.PHONY : swarm.o
+swarm.obj: swarm.cpp.obj
+.PHONY : swarm.obj
 
 # target to build an object file
-swarm.cpp.o:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/swarm.cpp.o
-.PHONY : swarm.cpp.o
+swarm.cpp.obj:
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/swarm.cpp.obj
+.PHONY : swarm.cpp.obj
 
 swarm.i: swarm.cpp.i
 .PHONY : swarm.i
 
 # target to preprocess a source file
 swarm.cpp.i:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/swarm.cpp.i
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/swarm.cpp.i
 .PHONY : swarm.cpp.i
 
 swarm.s: swarm.cpp.s
@@ -247,7 +247,7 @@ swarm.s: swarm.cpp.s
 
 # target to generate assembly for a file
 swarm.cpp.s:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/swarm.cpp.s
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/template-service.dir/build.make src/CMakeFiles/template-service.dir/swarm.cpp.s
 .PHONY : swarm.cpp.s
 
 # Help Target
@@ -259,19 +259,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... template-service"
-	@echo "... main.o"
+	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... particle.o"
+	@echo "... particle.obj"
 	@echo "... particle.i"
 	@echo "... particle.s"
-	@echo "... renderer.o"
+	@echo "... renderer.obj"
 	@echo "... renderer.i"
 	@echo "... renderer.s"
-	@echo "... screen.o"
+	@echo "... screen.obj"
 	@echo "... screen.i"
 	@echo "... screen.s"
-	@echo "... swarm.o"
+	@echo "... swarm.obj"
 	@echo "... swarm.i"
 	@echo "... swarm.s"
 .PHONY : help
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd D:/C_CPP/C-Cpp/Particle_scattering_cpp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

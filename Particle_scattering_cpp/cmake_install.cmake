@@ -1,8 +1,8 @@
-# Install script for directory: /Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp
+# Install script for directory: D:/C_CPP/C-Cpp/Particle_scattering_cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/template-project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "C:/mingw64/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp/src/cmake_install.cmake")
+  include("D:/C_CPP/C-Cpp/Particle_scattering_cpp/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hsynmn/Desktop/C-C++/C-Cpp/Particle_simulation_cpp/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/C_CPP/C-Cpp/Particle_scattering_cpp/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
