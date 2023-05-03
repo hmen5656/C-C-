@@ -6,7 +6,7 @@ namespace common_utils {
     class Swarm 
     {
     public:
-        const static int NPARTICLES = 3000;
+        const static int NPARTICLES = 5000;
         Swarm ();
         virtual ~Swarm (); 
         const Particle * const getParticles(){ return m_particle; };
