@@ -3,7 +3,6 @@ set(TARGET_NAME "template-service")
 set(TARGET_SOURCES 
     ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/screen.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/renderer.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/particle.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/swarm.cpp
 

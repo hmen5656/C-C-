@@ -57,19 +57,19 @@ namespace template_project {
         return _rpoint;
     };  
     Point Point::operator+(const Point& _point){
-        std::cout<<"RHD is REFERANCE"<<std::endl;
+        std::cout<<"+ RHD is REFERANCE"<<std::endl;
         Point _rpoint = Point(this->getX() + _point.getX() , this->getY() + _point.getY(),this->getP() + _point.getP());
         return _rpoint;
     }
     
     Point Point::operator+(const Point* _point){
-        std::cout<<"RHD is POINTER"<<std::endl;
+        std::cout<<"+ RHD is POINTER"<<std::endl;
         Point _rpoint = Point(this->getX() + _point->getX() , this->getY() + _point->getY(),this->getP() + _point->getP());
         return _rpoint;
     }
     
     Point& Point::operator=(const Point& _point){
-        std::cout<<"RHD is REFERANCE"<<std::endl;
+        std::cout<<"- RHD is REFERANCE"<<std::endl;
         delete this->p;
         this->p = new int(_point.getP());
         this->x = _point.getX();
@@ -77,7 +77,7 @@ namespace template_project {
         return *this;
     }
     Point& Point::operator=(const Point* _point){
-        std::cout<<"RHD is POINTER"<<std::endl;
+        std::cout<<"- RHD is POINTER"<<std::endl;
         delete this->p;
         this->p = new int(_point->getP());
         this->x = _point->getX();
